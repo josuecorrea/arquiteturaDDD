@@ -13,6 +13,7 @@ namespace Arquitetura.Ioc
             Bind<IProdutoAppServico>().To<ProdutoAppService>();
             Bind<IUnidadeDeTrabalho>().To<UnidadeDeTrabalho>();
 
+
             Bind(typeof(IRepositorioBase<>)).To(typeof(RepositorioBase<>));
         }
     }
